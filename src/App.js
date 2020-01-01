@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import useWordGame from "./useWordGame"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const {
+        result, 
+        textBoxRef, 
+        handleChange, 
+        text, 
+        isTimeRunning, 
+        timeRemaining, 
+        startGame, 
+        wordCount
+    } = useWordGame(5)
+    
+    
+    return (
+        <div className="game">
+            <h1>Word Typing Game</h1>
+            <h4>How fast do you type?</h4>
+            <textarea
+                ref={textBoxRef}
+                onChange={handleChange}
+                value={text}
+                disabled={!isTimeRunning}
+            />
+            <h3>Time remaining: {timeRemaining}</h3>
+            <button 
+                onClick={startGame}
+                disabled={isTimeRunning}
+            >
+                Start
+            </button>
+            <h1>Word count: {wordCount}</h1> 
+            <h4>previous result: {result} </h4>
+
+            <h3 className="watermark">React App.</h3>
+        </div>
+    )
 }
 
-export default App;
+export default App
