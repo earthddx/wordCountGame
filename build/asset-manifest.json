@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wordCountGame/static/css/main.6f7c88cd.chunk.css",
+    "main.js": "/wordCountGame/static/js/main.cce1f557.chunk.js",
+    "main.js.map": "/wordCountGame/static/js/main.cce1f557.chunk.js.map",
+    "runtime-main.js": "/wordCountGame/static/js/runtime-main.d014e900.js",
+    "runtime-main.js.map": "/wordCountGame/static/js/runtime-main.d014e900.js.map",
+    "static/js/2.f438b240.chunk.js": "/wordCountGame/static/js/2.f438b240.chunk.js",
+    "static/js/2.f438b240.chunk.js.map": "/wordCountGame/static/js/2.f438b240.chunk.js.map",
+    "index.html": "/wordCountGame/index.html",
+    "precache-manifest.43d1611d419a054fa81b942c2b2e42b5.js": "/wordCountGame/precache-manifest.43d1611d419a054fa81b942c2b2e42b5.js",
+    "service-worker.js": "/wordCountGame/service-worker.js",
+    "static/css/main.6f7c88cd.chunk.css.map": "/wordCountGame/static/css/main.6f7c88cd.chunk.css.map",
+    "static/js/2.f438b240.chunk.js.LICENSE": "/wordCountGame/static/js/2.f438b240.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d014e900.js",
+    "static/js/2.f438b240.chunk.js",
+    "static/css/main.6f7c88cd.chunk.css",
+    "static/js/main.cce1f557.chunk.js"
+  ]
+}
