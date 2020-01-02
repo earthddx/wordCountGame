@@ -19,6 +19,7 @@ function App() {
             <h1>Word Typing Game</h1>
             <h4>How fast do you type?</h4>
             <textarea
+                onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
                 ref={textBoxRef}
                 onChange={handleChange}
                 value={text}
