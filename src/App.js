@@ -2,7 +2,7 @@ import React from "react"
 import useWordGame from "./useWordGame"
 
 function App() {
-    const {
+    const { 
         result, 
         textBoxRef, 
         handleChange, 
